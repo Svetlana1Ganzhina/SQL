@@ -92,9 +92,9 @@ Select AVG(speed) from PC;
 
 --12.Найдите среднюю скорость ПК-блокнотов, цена которых превышает 1000 дол.
 
-Select AVG(speed) from laptop where price > '1000'
+Select AVG(speed) from laptop where price > '1000';
 
 
 --13.Найдите среднюю скорость ПК, выпущенных производителем A.
 
-Select avg(pc.speed) from pc join product p on (pc.model=p.model and maker = 'A')
+Select avg(pc.speed) from pc join product p on (pc.model=p.model and maker = 'A');
