@@ -98,3 +98,7 @@ Select AVG(speed) from laptop where price > '1000';
 --13.Найдите среднюю скорость ПК, выпущенных производителем A.
 
 Select avg(pc.speed) from pc join product p on (pc.model=p.model and maker = 'A');
+
+--14.Найдите размеры жестких дисков, совпадающих у двух и более PC. Вывести: HD
+
+Select hd FROM PC group by hd having count(model) >= 2;
